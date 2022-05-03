@@ -1,4 +1,5 @@
 class Cuadro { 
+  boolean sedibuja  = false; //pinceladas//
 
   Mancha a= new Mancha();
   Pinceladas b = new Pinceladas();
@@ -7,14 +8,17 @@ class Cuadro {
 
 
   void dibujarCuadro() { 
-    
+    //////////////////
     grafico1.beginDraw();
-    if (mousePressed) {
+
+    if (  mouseX  > 400  == true ) {
+      
+      
       b.dibujar();
     }
-    
     grafico1.endDraw();
-    
+    /////////////////// 
+
     grafico2.beginDraw();
     a.dibujar();
     grafico2.endDraw();
@@ -22,7 +26,5 @@ class Cuadro {
     c.dibujar();
     c.mover();
     grafico3.endDraw();
-    
   }
-
 }

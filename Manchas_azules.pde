@@ -5,7 +5,7 @@ class Mancha {
   float y [] = new float [c];
   float tamW [] = new float[c];
   float tamH [] = new float [c];
- 
+
 
   Mancha() {
     for (int i = 0; i < c; i++) {
@@ -17,8 +17,9 @@ class Mancha {
   }
 
   void dibujar() {
+
     for (int i = 0; i < 10; i++) {
-      
+
       grafico2.noStroke();
       push();
       grafico2.fill(#03b3d4);
